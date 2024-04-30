@@ -1,0 +1,157 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4eddd;
+    color: #637249;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #db7859;
+  }
+  
+  .pictures{
+    margin: 2rem;
+    z-index: 1;
+  }
+  
+  .events-container {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .event {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Updated box shadow values */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .event:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted shadow on hover for a subtle effect */
+  }
+  
+  .landingPageGuest {
+    margin: 5% auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column; /* Stack elements vertically for a more focused landing page */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f4eddd 30%, #ffffff 100%);
+    padding: 5rem 1rem; /* Add more padding for breathing space */
+    border-radius: 20px; /* Soften the edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .landingPageGuest h1 {
+    font-size: 4rem;
+    color: #637249; /* Slightly darker for better contrast */
+    margin: 0;
+    font-family: 'Georgia', serif; /* Modern, sans-serif font for the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .landingPageGuest img {
+    max-width: 80%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Soften the image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for interaction */
+  }
+  
+  .landingPageGuest img:hover {
+    transform: scale(1.05); /* Slight scale on hover for interaction */
+  }
+  
+  /* Media query for screens with a maximum width of 768px (tablets and phones) */
+  @media (max-width: 768px) {
+    .landingPageGuest {
+      flex-direction: column;
+    }
+  
+    .landingPageGuest h1 {
+      font-size: 3rem; /* Slightly smaller font size for mobile */
+    }
+  
+    .landingPageGuest img {
+      max-width: 90%; /* Larger image on smaller screens */
+    }
+  
+    .events-container {
+      flex-direction: column; /* Change to a column layout for smaller screens */
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ensure it takes at least the full height of the viewport minus any headers or footers you might have */
+     /* Replace <header-footer-height> with the actual combined height of your header and footer, if any */
+    /* Additional styles here */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #637249;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  /*TEST*/
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }

@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+.carousel-container {
+  width: 80%;
+  margin: auto;
+}
+
+.test{
+    background-color: #deaea0;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px;
+}

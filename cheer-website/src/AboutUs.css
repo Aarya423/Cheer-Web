@@ -1,0 +1,41 @@
+.about-us-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 50px;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+
+.company-photo {
+    max-width: 30rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    margin-right: 2rem; /* Ensure some space between the image and the text */
+}
+
+.company-photo:hover {
+    transform: scale(1.1);
+}
+
+.company-info {
+    max-width: 600px;
+    text-align: left; /* Align text to the left for readability */
+}
+
+.aboutHeader, .aboutSubHeader {
+    color: #637249;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.aboutSubHeader {
+    font-size: 2rem; /* Slightly smaller than the main header */
+    margin-top: 30px; /* Added top margin for spacing between sections */
+}
+
+.aboutParagraph {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #6a5870;
+    margin-bottom: 15px; /* Added bottom margin for spacing between paragraphs */
+}

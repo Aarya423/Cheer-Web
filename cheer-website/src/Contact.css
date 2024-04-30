@@ -1,0 +1,82 @@
+/* General body styling for a consistent background and font */
+body {
+    background-color: #f4eddd; /* Light grey background for a subtle, professional look */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional and widely supported font stack */
+    color: #333; /* Darker text for better readability */
+}
+
+body, .main-container { /* Replace .main-container with the actual class of the parent container if it's not <body> */
+    display: flex;
+    flex-direction: column; /* Use column if you want other elements to stack vertically */
+    align-items: center; /* Horizontally centers the child elements */
+    justify-content: center; /* Vertically centers the child elements */
+    min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+}
+
+/* Main contact section styling */
+.contact-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e8dfd8 30%, #f7f2ec 100%); /* Ends with a softer, off-white shade */
+    border: 1px solid #ddd; /* Subtle border */
+    padding: 2rem; /* More padding for a spacious look */
+    margin: 2rem auto; /* Center the contact section with automatic horizontal margins */
+    border-radius: 8px; /* Softened corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Max width to prevent overly wide forms on large screens */
+}
+
+.display-4.mb-4 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Container holding different sections like contact info and form */
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    width: 100%;
+}
+
+/* Contact information styling */
+.contact-info {
+    margin: 1rem;
+    text-align: left; /* Align text to the left for readability */
+}
+
+/* Styling for operating hours and similar lists */
+.operating-hours ul {
+    list-style: none; /* Remove default list styling */
+    padding-left: 0; /* Align with the rest of the text */
+}
+
+/* Form and input styling for a cohesive, professional look */
+.contact-input, .contact_form .form-control {
+    width: 100%; /* Full width to utilize space */
+    padding: 0.5rem; /* Adequate padding for ease of use */
+    margin: 0.5rem 0; /* Spacing between form elements */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Softened corners */
+}
+
+/* Button styling for a standout, professional look */
+.btn {
+    background-color: #db7859; /* Updated to the new color */
+    color: #ffffff; /* Keeping white text for contrast */
+    padding: 0.5rem 1rem; /* Adequate padding for clickable area */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Consistent corner rounding */
+    cursor: pointer; /* Indicate button is clickable */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #c96d51; /* Slightly darker shade of the new color for hover feedback */
+}
+
+/* Ensure textarea doesn't exceed the width of its container */
+textarea {
+    max-width: 100%; /* Limit width to prevent overflow */
+    height: 150px; /* Default height to accommodate more text */
+}

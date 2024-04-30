@@ -1,0 +1,30 @@
+.application-forms {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light grey background */
+}
+  
+.application-forms h2 {
+    color: #333; /* Dark grey color for the heading */
+}
+  
+.application-forms ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+  
+.application-forms li {
+    margin-bottom: 10px; /* Add some space between list items */
+}
+  
+.application-forms a {
+    color: #007bff; /* Bootstrap's default link color */
+    text-decoration: none; /* Remove underline from links */
+}
+  
+.application-forms a:hover {
+    text-decoration: underline; /* Add underline on hover for better accessibility */
+}
+  
